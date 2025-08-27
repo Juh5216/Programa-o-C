@@ -15,11 +15,9 @@ printf("Insira a terceira nota: ");
 scanf(" %d", &nota3);
 
 // Cálculo da média: somar e dividir por 2
-
 media = (nota1 + nota2 + nota3) / 3;
 
 //Exibir o resultado 
-
 printf("A média é: %d", media);
 
 return 0;
