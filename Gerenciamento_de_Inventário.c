@@ -2,46 +2,44 @@
 
 int main(){
 
-
-// 1º Declaração de variáveis
-// 2º Informações do produto
-
+// Declarar variáveis - produtos em estoque.
 char produtoA[30] = "Produto A";
 char produtoB[30] = "Produto B";
 
-//Valor em estoque
+// Declarar variáveis - quantidade dos produtos que estão em estoque.
 unsigned int estoqueA = 1000;
 unsigned int estoqueB = 2000;
 
-//Valores
+//Declarar variáveis - valor de cada produto.
 float valorA = 10.50;
 float valorB = 20.40;
 
-//Estoque minímo
+//Declarar variáveis - quantidade de estoque minimo para cada produto.
 unsigned int estoqueMinimoA = 500;
 unsigned int estoqueMinimoB = 2500;
 
-//Valor total em estoque
-double valorTotalA ;
+//Declarar variáveis - valor total em estoque de cada produto.
+double valorTotalA;
 double valorTotalB;
 
-//Exibir informações do produto
-printf("Produto %s tem estoque %u e o valor unitário é R$ %.2f \n", produtoA, estoqueA, valorA);
-printf("Produto %s tem estoque %u e o valor unitário é R$ %.2f \n", produtoB, estoqueB, valorB);
 
-//Comparação do valor minimo do estoque
+//Exibir informações dos produtos.
+printf("O produto %s possui em estoque %u. O valor unitário é de R$ %.2f \n ", produtoA, estoqueA, valorA);
+printf("O produto %s possui em estoque %u. O valor unitário é de R$ %.2f \n ", produtoB, estoqueB, valorB);
 
-int resultadoA;
-int resultadoB;
+//Declaração de variáveis - Armazenamento do valor do resultado da comparação do estoque e estoque minimo.
+int resultadoA = estoqueA>estoqueMinimoA;
+int resultadoB = estoqueB>estoqueMinimoB;
 
-resultadoA = estoqueA>estoqueMinimoA;
-resultadoA = estoqueB>estoqueMinimoB;
+//Exibir informações do estoque.
+printf("O produto %s tem estoque minimo %d \n ", produtoA, resultadoA);
+printf("O produto %s tem estoque minimo %d \n ", produtoB, resultadoB);
 
-printf("O produto %s tem estoque minimo %d", produtoA, resultadoA);
-printf("O produto %s tem estoque minimo %d", produtoB, resultadoB);
-
-//Comparação dos valores totais
-
+//Comparação dos valores totais dos produtos.
+printf("O valor total de A (R$ %.2f) é maior que o valor total de B (R$ %.2f)?: %d \n ",
+                        estoqueA*valorA,
+                        estoqueB*valorB,
+                        (estoqueA*valorA) > (estoqueB*valorB));
 
 }
 
