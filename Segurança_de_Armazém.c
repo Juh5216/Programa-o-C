@@ -1,4 +1,4 @@
-/*Estruras de decisão vão permitir um ambiente seguro, verificando: 
+/*As estruturas de decisão vão permitir um ambiente seguro, verificando: 
     - Temperatura
     - Umidade
     - Nível de estoque
