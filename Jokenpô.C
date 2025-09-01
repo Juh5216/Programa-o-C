@@ -26,13 +26,41 @@ scanf("%d", &escolhaJogador);
 
 escolhaComputador = rand() %3 + 1;
 
+//Escolha do jogador
 switch(escolhaJogador)
 {
     case 1:
-    printf("Jogador pedra");
-
+    printf("Jogador:Pedra - ");
+    break;
+     case 2:
+    printf("Jogador:Papel");
+    break;
+     case 3:
+    printf("Jogador:Tesoura");
+    break;
+     default:
+    printf("Opção inválida");
+    break;
+    
 }
 
+//Escolha do computador
+switch(escolhaJogador)
+{
+    case 1:
+    printf("Jogador:Pedra - ");
+    break;
+     case 2:
+    printf("Jogador:Papel");
+    break;
+     case 3:
+    printf("Jogador:Tesoura");
+    break;
+     default:
+    printf("Opção inválida");
+    break;
+    
+}
 
     return 0;
 }
