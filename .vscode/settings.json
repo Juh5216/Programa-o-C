@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "cadastro de alunos.C": "cpp"
+        "cadastro de alunos.C": "cpp",
+        "Jokenpô.C": "cpp"
     }
 }
