@@ -1,13 +1,3 @@
-// Pedra
-//Papel 
-//Tesoura
-//Numeros aleatorios
-// pedra ganah de tesoura
-// papel ganha de pedra
-// tesoura ganha de papel
-//Comparação de escolhas
-// Se ambos os jogares escolherem o mesmo valor = empate
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
