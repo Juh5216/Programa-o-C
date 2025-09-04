@@ -12,15 +12,15 @@ Gerenciamento de inventário
 Cálculo da média:
   - Operadores aritiméticos
 
-Sitema de gerenciamento de nota de alunos
-- Operador ternário
-- Integrações de estruturas de decisão
-
 Segurança de armazem
 - Estrutura de decisão (If/else)
 
 Jokenpô
 - Estrutura de decisão (Switch)
+
+Sitema de gerenciamento de nota de alunos
+- Operador ternário
+- Integrações de estruturas de decisão
 
 
   
