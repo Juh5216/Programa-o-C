@@ -17,10 +17,15 @@ Segurança de armazem
 
 Jokenpô
 - Estrutura de decisão (Switch)
+- gerador de números aleatórios
 
 Sitema de gerenciamento de nota de alunos
 - Operador ternário
 - Integrações de estruturas de decisão
 
-
+Jogo de 'Maior, menor e igual'
+- Operador ternário
+- Estruturas de decisão (if/else)
+- Estruturas de decisão (Switch)
+- Gerador de números aleatórios
   
