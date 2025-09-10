@@ -1,6 +1,6 @@
 /*  - O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
         * O jogador não pode selecionar o mesmo atributo 2 vezes
-    - Soma dos Atributos: Após comparar os dois atributos individualmente, o sistema deve somar os valores dos atributos para cada carta. A carta com a maior soma vence a rodada.
+    
     */
 
  #include <stdio.h>
@@ -214,6 +214,13 @@ int main() {
 
    }
      
+   /* Soma dos Atributos: 
+        - Após comparar os dois atributos individualmente, o sistema deve somar os valores dos atributos para cada carta. 
+        - A carta com a maior soma vence a rodada. 
+        - Tratamento de Empates: Implemente a lógica para tratar empates. Se a soma dos atributos das duas cartas for igual, exiba a mensagem "Empate!".*/
+
+
+
    /* - Exibição Clara do Resultado: Mostre o resultado da comparação de forma clara e organizada, incluindo:
  
         * O nome dos dois países.
