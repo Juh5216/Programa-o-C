@@ -187,8 +187,8 @@ int main() {
     printf("Super poder: %.2f \n", SuperPoder2);
 
 
-    /* - O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
-         */
+    // O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
+        
 
     // Escolha do 1º atributo
     int escolhaAtributo1;
@@ -200,7 +200,6 @@ int main() {
     printf("4 - Pontos turísticos \n");
     printf("5 - Densidade populacional \n");
     scanf(" %d", &escolhaAtributo1);
-    while(getchar() != '\n');
 
     switch(escolhaAtributo1){
         case 1:
@@ -225,15 +224,14 @@ int main() {
 
 
     // Escolha do 2º Atributo
-
     int escolhaAtributo2;
+
     printf("Jogadores, agora escolham o 2º atributo para batalhar! \n");
     printf("1 - População \n");
     printf("2 - Área \n");
     printf("3 - PIB \n");
     printf("4 - Pontos turísticos \n");
     printf("5 - Densidade populacional \n");
-    while(getchar() != '\n');
     scanf(" %d", &escolhaAtributo2);
 
     switch(escolhaAtributo2){
