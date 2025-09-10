@@ -21,46 +21,29 @@ Qual carta venceu (ou se houve empate).
 
 
 int main() {
-    
-    /* Objetivo: Comparação entre duas cartas já cadastradas, utilizando estruturas de decisão if e if/else.
-        - O Jogador deve escolher um atributo para batalhar.
-            * Criar um menu para que o jogador possa escolher o atributo que irá batalhar (Switch).
-        - Com o atributo selecionado, é necessário comparar as cartas para descobrir o vencedor (If/else).
-            * Tratar excessões = Empate (Estruturas aninhadas)
-        - Exibir o resultado
-            * Carta vencedora
-            * Pais
-            * Atributo utilizado
-            * Valor 
-            * Se foi empate */
-             
-            
 
-
-       /* 1º Receber as informações das duas cartas.
-             - As cartas devem conter os seguintes atributos:
-                * Estado (string)
-                * Código da carta (string)
-                * Nome da cidade (string)
-                * População (int)
-                * Área (float)
-                * PIB (float)
-                * Número de pontos turísticos (int) */
+    /* 1º Receber as informações das duas cartas.
+        - As cartas devem conter os seguintes atributos:
+            * Estado (string)
+            * Código da carta (string)
+            * Nome da cidade (string)
+            * População (int)
+            * Área (float)
+            * PIB (float)
+            * Número de pontos turísticos (int) */
     
 
     //Carta 1
     char pais1[10];
     char estado1;                          // Uma letra.
-    char codigo1[3];                       // A letra do estado seguida de um número 01 á 04.
+    char codigo1[3];                       // A letra do estado seguida de um número.
     char nomeCidade1[15]; 
     int populacao1;
-    float area1;                           // Área em quadrados
+    float area1;                           // Área em km quadrados
     float PIB1; 
     int pontosTuristicos1;
-    float PIBPerCapita1;                  // Pib / população
     float densidadePopulacional1;         // População/área
-    float SuperPoder1;                    /* - Soma de : população, área, PiB, PiB per capita e densidade populacional invertida, numeros de pontos turíticos).
-                                             - Conversão de tipos: O resultado da soma > tipo (float)  */
+   
                                                                                                         
     //Receber informações da carta 1
     printf("Informações da primeira carta! \n");
@@ -91,29 +74,20 @@ int main() {
     scanf(" %d", &pontosTuristicos1);
 
 
-    //Cálculo do PIB per capita carta 1.
-    PIBPerCapita1 = (PIB1/populacao1);
-
     //Cálculo da densidade populacinal carta 1.
     densidadePopulacional1 = (populacao1/area1);
-
-    //Cálculo para super poder carta 2.
-    SuperPoder1 = (float) (populacao1 + area1 + PIB1 + PIBPerCapita1 + pontosTuristicos1);
-
     
+
     //Carta 2
     char pais2[10]; 
     char estado2;                        // Uma letra
-    char codigo2[3];                     // A letra do estado seguida de um número 01 á 04.
+    char codigo2[3];                     // A letra do estado seguida de um número.
     char nomeCidade2[15]; 
     int populacao2;
     float area2;                         // Área em kilometros quadrados
     float PIB2; 
-    int pontosTuristicos2;
-    float PIBPerCapita2;                 // Pib / população
-    float densidadePopulacional2;        // População/área
-    float SuperPoder2;                   /* - Soma de : população, área, PiB, PiB per capita e densidade populacional invertida, numeros de pontos turíticos).
-                                            - Conversão de tipos: O resultado da soma > tipo (float)  */
+    int pontosTuristicos2;   
+    float densidadePopulacional2;                     
 
     //Receber informações da carta 2
     printf("Informações da segunda carta! \n");
@@ -143,56 +117,14 @@ int main() {
     scanf(" %d", &pontosTuristicos2);
 
 
-     // 2º Cálculo e exibição da densidade populacional e PIB per capita.
-
-    //Cálculo do PIB per capita carta 2.
-    PIBPerCapita2 = (PIB2/populacao2);
-
-    //Cálculo da densidade populacional carta 2.
+    // 2º Cálculo da densidade populacional
     densidadePopulacional2 = (populacao2/area2);
-
-    //Cálculo do super poder carta 2.
-    SuperPoder2 = (float) (populacao2 + area2 + PIB2 + PIBPerCapita2 + pontosTuristicos2);
-
-
-    //Exibição dos dados da carta 1
-    printf("Carta 1 \n");
-
-    printf("País: %s \n", pais1);
-    printf("Estado: %c \n", estado1);
-    printf("Código: %s \n", codigo1);
-    printf("Cidade: %s \n", nomeCidade1);
-    printf("População: %d \n", populacao1);
-    printf("Área: %.2f Km² \n ", area1);
-    printf("PIB: %.2f reais \n ", PIB1);
-    printf("Números de pontos turísticos: %d \n", pontosTuristicos1);
-    printf("Densidade populacional: %.2f hab/Km² \n ", densidadePopulacional1);
-    printf("PIB per capita: %.2f reais \n ", PIBPerCapita1);
-    printf("Super poder: %.2f \n", SuperPoder1);
-    
-
-
-    //Exibição dos dados da carta 2
-    printf("Carta 2 \n");
-
-    printf("País: %s \n", pais2);
-    printf("Estado: %c \n", estado2);
-    printf("Código: %s \n", codigo2);
-    printf("Cidade: %s \n", nomeCidade2);
-    printf("População: %d \n", populacao2);
-    printf("Área: %.2f Km² \n ", area2);
-    printf("PIB: %.2f reais \n ", PIB2);
-    printf("Números de pontos turísticos: %d \n", pontosTuristicos2);
-    printf("Densidade populacional: %f hab/Km²\n", densidadePopulacional2);
-    printf("PIB per capita: %.2f reais \n", PIBPerCapita2);
-    printf("Super poder: %.2f \n", SuperPoder2);
 
 
     // O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
-        
-
     // Escolha do 1º atributo
     int escolhaAtributo1;
+    int escolhaAtributo2;
 
     printf("Jogadores, escolham o 1º atributo para batalhar! \n");
     printf("1 - População \n");
@@ -205,18 +137,23 @@ int main() {
     switch(escolhaAtributo1){
         case 1:
         printf("1º atributo escolhido para a batalha: População! \n");
+        populacao1>populacao2 ? printf("Carta 1 venceu! \n") : populacao2>populacao1 ? printf("Carta 2 venceu! \n") : printf("Empate! \n");
         break;
         case 2:
         printf("1º atributo escolhido para a batalha: Área! \n");
+        area1>area2 ? printf("Carta 1 venceu! \n") : area2>area1 ? printf("Carta 2 venceu! \n") : printf("Empate! \n");
         break;
         case 3:
         printf("1º atributo escolhido para a batalha: PIB! \n");
+        PIB1>PIB2 ? printf("Carta 1 venceu! \n") : PIB2>PIB1 ? printf("Carta 2 venceu! \n") : printf("Empate! \n");
         break;
         case 4:
         printf("1º atributo escolhido para a batalha: Pontos turísticos! \n");
+        pontosTuristicos1>pontosTuristicos2 ? printf("Carta 1 venceu! \n") : pontosTuristicos2>pontosTuristicos1 ? printf("Carta 2 venceu! \n") : printf("Empate! \n");
         break;
         case 5:
         printf("1º atributo escolhido para a batalha: Densidade populacional! \n");
+        densidadePopulacional1<densidadePopulacional2 ? printf("Carta 1 venceu! \n") : densidadePopulacional2<densidadePopulacional1 ? printf("Carta 2 venceu! \n") : printf("Empate! \n");
         break;
         default:
         printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
@@ -225,7 +162,6 @@ int main() {
 
 
     // Escolha do 2º Atributo
-    int escolhaAtributo2;
 
     printf("Jogadores, agora escolham o 2º atributo para batalhar! \n");
     printf("Atenção! O segundo atributo não pode ser igual ao primeiro. \n");    // Os jogadores NÃO podem selecionar o mesmo atributo 2 vezes
@@ -259,30 +195,30 @@ int main() {
 
     // Os jogadores NÃO podem selecionar o mesmo atributo 2 vezes
    if (escolhaAtributo2==escolhaAtributo1) {
-    printf("Atenção!O segundo atributo não pode ser igual ao primeiro. Escolha novamente ou cancele a batalha! \n");
-
-        switch(escolhaAtributo2){
+    printf("Atenção!O segundo atributo não pode ser igual ao primeiro. Reinicie o jogo! \n");
+    return(1);
+    
+   } else {
+    switch(escolhaAtributo2){
         case 1:
-        printf("2º atributo escolhido para a batalha: População! \n");
+        populacao2>populacao1 ? printf("Carta 2 venceu! \n") : populacao1>populacao2 ? printf("Carta 1 venceu! \n") : printf("Empate! \n");
         break;
         case 2:
-        printf("2º atributo escolhido para a batalha: Área! \n");
+        area2>area1 ? printf("Carta 2 venceu! \n") : area1>area2 ? printf("Carta 1 venceu! \n") : printf("Empate! \n");
         break;
         case 3:
-        printf("2º atributo escolhido para a batalha: PIB! \n");
+        PIB2>PIB1 ? printf("Carta 2 venceu! \n") : PIB1>PIB2 ? printf("Carta 1 venceu! \n") : printf("Empate! \n");
         break;
         case 4:
-        printf("2º atributo escolhido para a batalha: Pontos turísticos! \n");
+        pontosTuristicos2>pontosTuristicos1 ? printf("Carta 2 venceu! \n") : pontosTuristicos1>pontosTuristicos2 ? printf("Carta 1 venceu! \n") : printf("Empate! \n");
         break;
         case 5:
-        printf("2º atributo escolhido para a batalha: Densidade populacional! \n");
+        densidadePopulacional2<densidadePopulacional1 ? printf("Carta 2 venceu! \n") : densidadePopulacional1<densidadePopulacional2 ? printf("Carta 1 venceu! \n") : printf("Empate! \n");
         break;
         default:
-        printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
+        printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam ou cancelem a batalha! \n");
         break;
     }
-   } else {
-    printf("Atributos escolhidos com sucesso! \n");
 
    }
      
