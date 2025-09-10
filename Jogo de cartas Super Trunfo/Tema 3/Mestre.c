@@ -1,9 +1,6 @@
-/*  - O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
-        * O jogador não pode selecionar o mesmo atributo 2 vezes
-    
-    */
+// Objetivo: Batalha com 2 atributos diferentes escolhidos para comparação de cartas
 
- #include <stdio.h>
+#include <stdio.h>
 
 
 int main() {
