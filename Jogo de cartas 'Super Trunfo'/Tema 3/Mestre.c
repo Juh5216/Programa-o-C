@@ -72,10 +72,10 @@ int main() {
     scanf(" %c", &estado1);
 
     printf("Insira o código da primeira carta (Letra inicial do estado + 01): ");
-    scanf(" %s", codigo1);
+    scanf(" %s", &codigo1);
 
     printf("Insira o nome da cidade, correspondente ao estado da primeira carta: ");
-    scanf(" %s", nomeCidade1);
+    scanf(" %s", &nomeCidade1);
 
     printf("Insira a população da cidade: ");
     scanf(" %d", &populacao1);
@@ -203,19 +203,19 @@ int main() {
 
     switch(escolhaAtributo1){
         case 1:
-        printf("Atributo escolhido para a batalha: População! \n");
+        printf("1º atributo escolhido para a batalha: População! \n");
         break;
         case 2:
-        printf("Atributo escolhido para a batalha: Área! \n");
+        printf("1º atributo escolhido para a batalha: Área! \n");
         break;
         case 3:
-        printf("Atributo escolhido para a batalha: PIB! \n");
+        printf("1º atributo escolhido para a batalha: PIB! \n");
         break;
         case 4:
-        printf("Atributo escolhido para a batalha: Pontos turísticos! \n");
+        printf("1º atributo escolhido para a batalha: Pontos turísticos! \n");
         break;
         case 5:
-        printf("Atributo escolhido para a batalha: Densidade populacional! \n");
+        printf("1º atributo escolhido para a batalha: Densidade populacional! \n");
         break;
         default:
         printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
@@ -227,6 +227,7 @@ int main() {
     int escolhaAtributo2;
 
     printf("Jogadores, agora escolham o 2º atributo para batalhar! \n");
+    printf("Atenção! O segundo atributo não pode ser igual ao primeiro. \n");    // Os jogadores NÃO podem selecionar o mesmo atributo 2 vezes
     printf("1 - População \n");
     printf("2 - Área \n");
     printf("3 - PIB \n");
@@ -236,28 +237,31 @@ int main() {
 
     switch(escolhaAtributo2){
         case 1:
-        printf("Atributo escolhido para a batalha: População! \n");
+        printf("2º atributo escolhido para a batalha: População! \n");
+        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'População' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");               //Verificação do atributo 'População'
         break;
         case 2:
-        printf("Atributo escolhido para a batalha: Área! \n");
+        printf("2º atributo escolhido para a batalha: Área! \n");
+        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Área' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");                    //Verificação do atributo 'Área'
         break;
         case 3:
-        printf("Atributo escolhido para a batalha: PIB! \n");
+        printf("2º atributo escolhido para a batalha: PIB! \n");
+        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'PIB' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");                     //Verificação do atributo 'PIB'
         break;
         case 4:
-        printf("Atributo escolhido para a batalha: Pontos turísticos! \n");
+        printf("2º atributo escolhido para a batalha: Pontos turísticos! \n");
+        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Pontos turísticos' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");       //Verificação do atributo 'Pontos tirísticos'
         break;
         case 5:
-        printf("Atributo escolhido para a batalha: Densidade populacional! \n");
+        printf("2º atributo escolhido para a batalha: Densidade populacional! \n");
+        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Densidade populacional' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");  //Verificação do atributo 'Densidade populacional'
         break;
         default:
         printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
         break;
     }
 
-     // Verificação: Os jogadores NÃO podem selecionar o mesmo atributo 2 vezes
-    
-    
+     
 
 
     /* Comparação das cartas para descobrir o vencedor.
