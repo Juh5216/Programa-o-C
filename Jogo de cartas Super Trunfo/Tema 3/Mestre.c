@@ -1,21 +1,7 @@
 /*  - O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
         * O jogador não pode selecionar o mesmo atributo 2 vezes
-    - Comparar os atributos (Todos) - Comparação com Múltiplos Atributos: Implemente a lógica para comparar as duas cartas com base nos dois atributos escolhidos.
     - Soma dos Atributos: Após comparar os dois atributos individualmente, o sistema deve somar os valores dos atributos para cada carta. A carta com a maior soma vence a rodada.
-    - Tratamento de Empates: Implemente a lógica para tratar empates. Se a soma dos atributos das duas cartas for igual, exiba a mensagem "Empate!".
-    - Menus Dinâmicos: Crie menus interativos e dinâmicos usando switch. "Dinâmicos" significa que, por exemplo, após o jogador escolher o primeiro atributo, esse atributo não deve mais aparecer como opção para a escolha do segundo atributo.
-    - Exibição Clara do Resultado: Mostre o resultado da comparação de forma clara e organizada, incluindo:
- 
-O nome dos dois países.
- 
-Os dois atributos usados na comparação.
- 
-Os valores de cada atributo para cada carta.
- 
-A soma dos atributos para cada carta.
- 
-Qual carta venceu (ou se houve empate).
- */
+    */
 
  #include <stdio.h>
 
@@ -121,7 +107,7 @@ int main() {
     densidadePopulacional2 = (populacao2/area2);
 
 
-    // O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS (Switch)
+    // O jogador deve escolher 2 atributos numéricos DIFERENTES para a comparação de cartas, através de MENUS INTERATIVOS.
     // Escolha do 1º atributo
     int escolhaAtributo1;
     int escolhaAtributo2;
@@ -133,6 +119,12 @@ int main() {
     printf("4 - Pontos turísticos \n");
     printf("5 - Densidade populacional \n");
     scanf(" %d", &escolhaAtributo1);
+
+
+    /* Menu interativo - Switch e comparações dos atributos da primeira escolha
+        - Comparar os atributos (Todos) 
+        - Comparação com Múltiplos Atributos: Implemente a lógica para comparar as duas cartas com base no atributo escolhido. 
+        - Tratamento de Empates: Implemente a lógica para tratar empates. Se a comparação dos atributos das duas cartas for igual, exiba a mensagem "Empate!". */
 
     switch(escolhaAtributo1){
         case 1:
@@ -222,84 +214,15 @@ int main() {
 
    }
      
+   /* - Exibição Clara do Resultado: Mostre o resultado da comparação de forma clara e organizada, incluindo:
+ 
+        * O nome dos dois países.
+        * Os dois atributos usados na comparação. 
+        * Os valores de cada atributo para cada carta.
+        * A soma dos atributos para cada carta. 
+        * Qual carta venceu (ou se houve empate). */
 
-
-    /* Comparação das cartas para descobrir o vencedor.
-            * O nome dos dois países.
-            * O atributo usado na comparação.
-            * Os valores do atributo para cada carta.
-            * Qual carta venceu.
-            * Em caso de empate, exibir a mensagem "Empate!".
-            * Tratar excessões = Empate (Estruturas aninhadas) */
-
-    /* Comparação da população
-    if (escolhaAtributo==1) {
-        if (populacao1>populacao2){
-            printf("A carta 1 venceu! \n");
-
-        } else if (populacao2>populacao1) {
-              printf("A carta 2 venceu! \n");
-
-        } else {
-            printf("Empate! \n");
-        }
-    }
-
-
-    // Comparação da área
-    if (escolhaAtributo==2){
-        if  (area1>area2) {
-            printf("Carta 1 venceu! \n");
-
-        } else if (area2>area1) { 
-               printf("Carta 2 venceu! \n");
-
-        } else {
-            printf("Empate! \n");
-        }
-    }
-
-
-    // Comparação do PIB
-    if (escolhaAtributo==3){
-        if  (PIB1>PIB2) {
-            printf("Carta 1 venceu! \n");
-
-        } else if (PIB2>PIB1) { 
-               printf("Carta 2 venceu! \n");
-
-        } else {
-            printf("Empate! \n");
-        }
-    }
-
-
-    // Comparação dos números de pontos turísticos
-    if (escolhaAtributo==4){
-        if  (pontosTuristicos1>pontosTuristicos2) {
-            printf("Carta 1 venceu!");
-
-        } else if (pontosTuristicos2>pontosTuristicos1) {       
-            printf("Carta 2 venceu!");
-
-        } else {
-            printf("Empate! \n");
-        }
-     }
-
-
-    // Comparação da densidade populacional
-    if (escolhaAtributo==5){
-        if  (densidadePopulacional1<densidadePopulacional2) {
-            printf("Carta 1 venceu!");
-
-        } else if (densidadePopulacional2<densidadePopulacional1) { 
-               printf("Carta 2 venceu!");
-
-        } else {
-            printf("Empate!");
-        }
-     }*/
+    
     
     return 0;
     
