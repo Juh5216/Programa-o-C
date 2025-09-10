@@ -67,6 +67,7 @@ int main() {
 
     printf("Insira o país da primeira carta: ");
     scanf(" %s", pais1);
+    while(getchar() != '\n'); // Limpa o buffer
 
     printf("Insira a letra inicial do estado da primeira carta: ");
     scanf(" %c", &estado1);
@@ -238,29 +239,52 @@ int main() {
     switch(escolhaAtributo2){
         case 1:
         printf("2º atributo escolhido para a batalha: População! \n");
-        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'População' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");               //Verificação do atributo 'População'
         break;
         case 2:
         printf("2º atributo escolhido para a batalha: Área! \n");
-        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Área' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");                    //Verificação do atributo 'Área'
         break;
         case 3:
         printf("2º atributo escolhido para a batalha: PIB! \n");
-        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'PIB' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");                     //Verificação do atributo 'PIB'
         break;
         case 4:
         printf("2º atributo escolhido para a batalha: Pontos turísticos! \n");
-        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Pontos turísticos' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");       //Verificação do atributo 'Pontos tirísticos'
         break;
         case 5:
         printf("2º atributo escolhido para a batalha: Densidade populacional! \n");
-        escolhaAtributo2==escolhaAtributo1? printf("O atributo 'Densidade populacional' ja foi escolhido. Escolha outro!"): printf("Vamos batalhar!");  //Verificação do atributo 'Densidade populacional'
         break;
         default:
         printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
         break;
     }
 
+    // Os jogadores NÃO podem selecionar o mesmo atributo 2 vezes
+   if (escolhaAtributo2==escolhaAtributo1) {
+    printf("Atenção!O segundo atributo não pode ser igual ao primeiro. Escolha novamente ou cancele a batalha! \n");
+
+        switch(escolhaAtributo2){
+        case 1:
+        printf("2º atributo escolhido para a batalha: População! \n");
+        break;
+        case 2:
+        printf("2º atributo escolhido para a batalha: Área! \n");
+        break;
+        case 3:
+        printf("2º atributo escolhido para a batalha: PIB! \n");
+        break;
+        case 4:
+        printf("2º atributo escolhido para a batalha: Pontos turísticos! \n");
+        break;
+        case 5:
+        printf("2º atributo escolhido para a batalha: Densidade populacional! \n");
+        break;
+        default:
+        printf("Opção inválida! Escolham um número de 1 à 5 corresponde ao atributo que desejam para batalha! \n");
+        break;
+    }
+   } else {
+    printf("Atributos escolhidos com sucesso! \n");
+
+   }
      
 
 
