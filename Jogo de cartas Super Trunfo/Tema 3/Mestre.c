@@ -215,7 +215,59 @@ int main() {
         - Após comparar os dois atributos individualmente, o sistema deve somar os valores dos atributos para cada carta. 
         - A carta com a maior soma vence a rodada. 
         - Tratamento de Empates: Implemente a lógica para tratar empates. Se a soma dos atributos das duas cartas for igual, exiba a mensagem "Empate!".*/
+  
+    float valor1_carta1 = 0, valor2_carta1 = 0;
+    float valor1_carta2 = 0, valor2_carta2 = 0;
+    char nomeAttr1[30], nomeAttr2[30];
 
+    
+    switch(escolhaAtributo1) { // Descobre o valor e nome do 1º atributo
+        case 1: 
+        valor1_carta1 = populacao1; valor1_carta2 = populacao2; sprintf(nomeAttr1, "População"); 
+        break;
+        case 2: 
+        valor1_carta1 = area1; valor1_carta2 = area2; sprintf(nomeAttr1, "Área"); 
+        break;
+        case 3: 
+        valor1_carta1 = PIB1; valor1_carta2 = PIB2; sprintf(nomeAttr1, "PIB"); 
+        break;
+        case 4: 
+        valor1_carta1 = pontosTuristicos1; valor1_carta2 = pontosTuristicos2; sprintf(nomeAttr1, "Pontos turísticos"); 
+        break;
+        case 5: 
+        valor1_carta1 = densidadePopulacional1; valor1_carta2 = densidadePopulacional2; sprintf(nomeAttr1, "Densidade populacional"); 
+        break;
+        default: 
+        sprintf(nomeAttr1, "Inválido"); 
+        break;
+    }
+
+    
+    switch(escolhaAtributo2){ // Descobre o valor e nome do 2º atributo
+        case 1: 
+        valor2_carta1 = populacao1; valor2_carta2 = populacao2; sprintf(nomeAttr2, "População"); 
+        break;
+        case 2: 
+        valor2_carta1 = area1; valor2_carta2 = area2; sprintf(nomeAttr2, "Área"); 
+        break;
+        case 3: 
+        valor2_carta1 = PIB1; valor2_carta2 = PIB2; sprintf(nomeAttr2, "PIB"); 
+        break;
+        case 4: 
+        valor2_carta1 = pontosTuristicos1; valor2_carta2 = pontosTuristicos2; sprintf(nomeAttr2, "Pontos turísticos"); 
+        break;
+        case 5: 
+        valor2_carta1 = densidadePopulacional1; valor2_carta2 = densidadePopulacional2; sprintf(nomeAttr2, "Densidade populacional"); 
+        break;
+        default: 
+        sprintf(nomeAttr2, "Inválido"); 
+        break;
+    }
+
+    float soma1 = valor1_carta1 + valor2_carta1;
+    float soma2 = valor1_carta2 + valor2_carta2;
+
+    
 
 
    /* - Exibição Clara do Resultado: Mostre o resultado da comparação de forma clara e organizada, incluindo:
@@ -225,6 +277,18 @@ int main() {
         * Os valores de cada atributo para cada carta.
         * A soma dos atributos para cada carta. 
         * Qual carta venceu (ou se houve empate). */
+
+    printf("\n--- RESULTADO DA SOMA DOS ATRIBUTOS ---\n");
+    printf("Carta 1 (%s): %s = %.2f | %s = %.2f | Soma = %.2f\n", pais1, nomeAttr1, valor1_carta1, nomeAttr2, valor2_carta1, soma1);
+    printf("Carta 2 (%s): %s = %.2f | %s = %.2f | Soma = %.2f\n", pais2, nomeAttr1, valor1_carta2, nomeAttr2, valor2_carta2, soma2);
+
+    if (soma1 > soma2) {
+        printf("Vencedor pela soma dos atributos: Carta 1 (%s)\n", pais1);
+    } else if (soma2 > soma1) {
+        printf("Vencedor pela soma dos atributos: Carta 2 (%s)\n", pais2);
+    } else {
+        printf("Empate pela soma dos atributos!\n");
+    }
 
     
     
