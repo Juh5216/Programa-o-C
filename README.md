@@ -29,3 +29,6 @@ Jogo de 'Maior, menor e igual'
 - Estruturas de decisão (Switch)
 - Gerador de números aleatórios
   
+Jogo de cartas Super Trunfo
+- Tema 2 - Implementando os primeiros passos
+- Tema 3 - Implementando a lógica do jogo
