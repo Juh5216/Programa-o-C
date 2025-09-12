@@ -36,6 +36,15 @@ Jogo de 'Maior, menor e igual'
 - Estruturas de decisão (Switch)
 - Gerador de números aleatórios
 
+Impressão de números 1
+- Estruturas de repetição (while)
+
+Impressão de números 2
+- Estruturas de repetição (Do while)
+
+Impressão de números 3
+- Estruturas de repetição (For)
+
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Xadrez
 
