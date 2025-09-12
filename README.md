@@ -1,3 +1,9 @@
+Jogo de cartas Super Trunfo
+- Tema 2 - Implementando os primeiros passos
+- Tema 3 - Implementando a lógica do jogo
+
+Exercicios praticados durante o desenvolvimento do jogo Super trunfo:
+
 Cadastro de alunos:
   - Entrada de dados
   - Saída de dados
@@ -28,11 +34,12 @@ Jogo de 'Maior, menor e igual'
 - Estruturas de decisão (if/else)
 - Estruturas de decisão (Switch)
 - Gerador de números aleatórios
-  
-Jogo de cartas Super Trunfo
-- Tema 2 - Implementando os primeiros passos
-- Tema 3 - Implementando a lógica do jogo
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Xadrez
-- Tema 4
+
+Tema 4
+* Novato - Estruturas de repetição
+* Aventureiro - Loops aninhados
+* Mestre - Loos complexos e maior manipulação de estruturas de repetição
 
