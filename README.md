@@ -2,6 +2,7 @@ Jogo de cartas Super Trunfo
 - Tema 2 - Implementando os primeiros passos
 - Tema 3 - Implementando a lógica do jogo
 
+
 Exercicios praticados durante o desenvolvimento do jogo Super trunfo:
 
 Cadastro de alunos:
