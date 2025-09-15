@@ -36,21 +36,21 @@ int main() {
         case 1:
 
         // Torre
-            for (int T = 0; T<=5; T++) 
+            for (int T = 1; T<=5; T++) 
                 printf("Cima\n");
                 printf("Movimento concluído!\n");
         break;
         case 2:
 
         //Bispo
-            for (int B = 0; B<=5; B++) 
+            for (int B = 1; B<=5; B++) 
                 printf("Cima e direita\n");
                 printf("Movimento concluído!\n");
         break;
         case 3:
 
         // Rainha
-            for (int R = 0; R<=8; R++) 
+            for (int R = 1; R<=8; R++) 
                  printf("Esquerda\n");
                  printf("Movimento concluído!\n");
         
