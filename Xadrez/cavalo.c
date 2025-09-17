@@ -37,18 +37,20 @@ int main() {
                  printf("Movimento concluído!\n");
         
         break;
-        case 4:
+        case 4: {                           // Para declarar uma variável dentro de um switch, é necessário que ela esteja dentro de um bloco.
 
         //Cavalo
-             int movimentoCompleto = 1;
+             int movimentoCompleto = 1;     // Número de movimentos que o cavalo deve fazer 
 
-             while(movimentoCompleto--) {
-                for(int i=0; i<2; i++) {
+             while(movimentoCompleto--) {   // Loop para realizar o movimento completo
+                for(int i=0; i<2; i++) {    // Movimento de 2 casas para cima
                     printf("Cima\n");
                 }
-                printf("Direita\n");
-
-             }
+                printf("Direita\n");        // Movimento de 1 casa para a direita
+                printf("Movimento concluído!\n");
+            }
+            break;
+        }
         default:
             printf("Peça inválida, escolha novamente.\n");
             break;
