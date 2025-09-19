@@ -39,10 +39,9 @@ Jogo de 'Maior, menor e igual'
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Xadrez
 
-Tema 4
-* Novato - Estruturas de repetição
-* Aventureiro - Loops aninhados
-* Mestre - Loos complexos e maior manipulação de estruturas de repetição
+* Torre Bispo e Rainha - Estruturas de repetição
+* Cavalo - Loops aninhados
+* Movimentos complexos - Loos complexos e maior manipulação de estruturas de repetição
 
 
 Exercicios praticados durante o desenvolvimento do jogo de xadrez:
