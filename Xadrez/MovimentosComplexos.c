@@ -47,14 +47,14 @@ void MovimentoRainha(int k) {
 
 //Procedimento para movimentação do cavalo
 void MovimentoCavalo(int l) {
-    while(l--) {   
-        for(int i=0; i<2; i++) {    
+    if (l <= 1)    
+        for(int l=0; l<2; l++) {    
             printf("Cima\n");
-        }
-        printf("Direita\n");        
-
-        MovimentoCavalo(l + 1);
-    }
+            
+        }   for (l; l == 0; l++) {
+                printf("Direita\n");
+            }
+                   
 }
     
 
