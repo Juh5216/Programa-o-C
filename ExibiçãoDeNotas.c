@@ -5,7 +5,7 @@ int main() {
 
     int index;
 
-    char * nomeAluno [3][3] = {
+    char *nomeAluno [3][3] = {
         {"Ana", "Pt: 30", "Mt: 90"},
         {"Daniel", "Pt: 60", "Mt: 60"},
         {"Gabriel", "Pt: 90", "Mt: 30"}
