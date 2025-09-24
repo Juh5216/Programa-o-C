@@ -60,3 +60,14 @@ Alfabeto
 
 Contagem regressiva
 - Funções e recursividade
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Batalha naval
+- Posicionamento de Navios
+
+
+Exercicios praticados durante o desenvolvimento do jogo de xadrez:
+
+Exibição de notas 
+- Matriz
