@@ -20,20 +20,47 @@
 int main() {
 
     //Tabuleiro
-    int tabuleiro [10][10]= 0;
+    int tabuleiro [10][10];
+    int i, j;
+
+    // Inicializando o tabuleiro com 0 (água)
+
+    for (i = 0; i < 10; i++) {
+
+        for (j = 0; j < 10; j++) {
+
+            tabuleiro [i][j] = 0;
+        }
+    }
+    
 
     //Posicionamento dos navios
 
+    int navio1 [3] = {3, 3, 3}; //Navio horizontal
+    int navio2 [3] = {3, 3, 3}; //Navio vertical
 
+    //Posicionando o navio1 (horizontal) na linha 2, colunas 4, 5 e 6
+    int linha_n1 = 2;
+    int coluna_n1 = 4;
+    for (j = 0; j < 3; j++) {
+        tabuleiro [linha_n1][coluna_n1 + j] = navio1 [j];
+    }
+
+    //Posicionando o navio2 (vertical) na coluna 7, linhas 5, 6 e 7
+    int linha_n2 = 5;
+    int coluna_n2 = 7;
+    for (i = 0; i < 3; i++) {
+        tabuleiro [linha_n2 + i][coluna_n2] = navio2 [i];
+    }
+    
     //Exibição do tabuleiro
 
-        printf("Tabuleiro \n");
-        for(int i = 0; i < 10; i++) {
-            for(int j = 0; j < 10; j++) {
-                printf("%d ", tabuleiro[i][j]);
-            }
-            printf("\n");
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            printf("%d ", tabuleiro [i][j]);
         }
+        printf("\n");
+    }
 
     return(0);
 
