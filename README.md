@@ -64,7 +64,8 @@ Contagem regressiva
 ------------------------------------------------------------------------------------------------------------------------------------------
 
 Batalha naval
-- Posicionamento de Navios
+- Posicionamento de Navios 1 (Matrizes e vetores)
+- Posicionamento de Navios 2 (Manipulação de matrizes e loops)
 
 
 Exercicios praticados durante o desenvolvimento do jogo de xadrez:
