@@ -71,3 +71,6 @@ Exercicios praticados durante o desenvolvimento do jogo de xadrez:
 
 Exibição de notas 
 - Matriz
+
+Exibição de matriz
+- Matriz e loops
