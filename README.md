@@ -75,3 +75,6 @@ Exibição de notas
 
 Exibição de matriz
 - Matriz e loops
+
+Localização de elementos
+- Matriz, loops e condicionais
