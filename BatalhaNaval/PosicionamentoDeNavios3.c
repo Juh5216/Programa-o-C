@@ -1,8 +1,16 @@
-/* 
-
-*/
-
 #include <stdio.h>
+
+// Cone
+#define LinhaCone 3
+#define ColunaCone 3
+
+// Cruz
+#define LinhaCruz 5
+#define ColunaCruz 5
+
+// Octaedro
+#define LinhaOctaedro 5
+#define ColunaOctaedro 5
 
 int main() {
 
@@ -28,9 +36,9 @@ int main() {
         
         Deve indicar quais posições são afetadas pela habilidade com o valor 1, e quais não são afetadas com o valor 0 */
 
-    int MatrizCone [3][3];
-    int MatrizCruz [3][3]; 
-    int MatrizOctaedro [3][3]; 
+    int Cone [LinhaCone][ColunaCone]= {6,6,6,6,6};
+    int Cruz [LinhaCruz][ColunaCruz] = {7,7,7,7,7};
+    int Octaedro [LinhaOctaedro][ColunaOctaedro]= {8,8,8,8,8};
 
     /*Posicionamento dos navios
         - Declare e inicialize 4 vetores (arrays unidimensionais) para representar os navios
@@ -38,7 +46,7 @@ int main() {
         - Um navio será posicionado horizontalmente, outro verticalmente e 2 na diagonal
         - Represente as posições ocupadas pelos navios na matriz do tabuleiro com o valor 3
         - Você deverá escolher as coordenadas iniciais de cada navio e garantir que eles estejam completamente dentro dos limites do tabuleiro e não se sobreponham*/
-    int navio1 [3] = {3, 3, 3}; // Navio horizontal
+   /* int navio1 [3] = {3, 3, 3}; // Navio horizontal
     int navio2 [3] = {3, 3, 3}; // Navio vertical
     int navio3 [3] = {3, 3, 3}; // Navio diagonal
     int navio4 [3] = {3, 3, 3}; // Navio diagonal
@@ -73,21 +81,44 @@ int main() {
     for (l = 0; l < 3; l++) {
         tabuleiro [linha_n4 + l][coluna_n4 - l] = navio4 [l];
     }
-
+*/
     // Cone
 
-    int linhaC= 2;
-    int colunaC = 2;
+    int linhaCone= 0;
+    int colunaCone = 5;
 
-    for (i=0; i<5;i++) {
-        for (j=0; j<5;j++) 
-        {
-            MatrizCone[i][j] = 0;
+    for (i= 0; i< colunaCone; i++) {
+        for (j=5; j>linhaCone; j--) {
+
+            while (j<5) {
+                j++;
+
+            if (j==0  || i==5) {
+                j++;
+            } if (j==9|| i==5){
+                j--;
+            }
+        }
+
+            tabuleiro [i][j] = 6;
         }
     }
 
+    // Cruz
 
+    int linhaCruz= 6;
+    int colunaCruz = 4;
+    int k;
+
+
+
+    // Octaedro
+
+    int linhaOctaedro= 7;
+    int colunaOctaedro = 3;
     
+
+
     /*  Exibição do tabuleiro
         - Utilize loops aninhados e o comando printf para exibir o tabuleiro no console. 
         - Mostre a matriz completa, com 0s representando água e 3s representando as partes dos navios */
